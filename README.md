@@ -523,7 +523,7 @@ Special thanks to:
 
 ### ⭐ Star this project if you found it helpful!
 
-**Made with ❤️ by Elite Estates Team**
+** Made with ❤️ by Aman-Bam **
 
 [Back to Top](#-elite-estates---luxury-real-estate-marketplace)
 
