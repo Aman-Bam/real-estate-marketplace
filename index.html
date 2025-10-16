@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Estates - Luxury Real Estate Marketplace</title>
+  <meta name="description" content="Discover luxury properties in prime locations. Find your dream home with Elite Estates.">
+  <meta name="keywords" content="real estate, luxury homes, property listings, buy sell rent">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <h1 class="text-2xl font-bold text-navy">Elite Estates</h1>
+      </div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="text-navy hover:text-gold transition">Home</a></li>
+        <li><a href="listings.html" class="text-navy hover:text-gold transition">Listings</a></li>
+        <li><a href="sell.html" class="text-navy hover:text-gold transition">Sell</a></li>
+        <li><a href="about.html" class="text-navy hover:text-gold transition">About</a></li>
+        <li><a href="contact.html" class="text-navy hover:text-gold transition">Contact</a></li>
+      </ul>
+      <button class="md:hidden" id="mobile-menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <ul class="px-4 py-2 space-y-2">
+        <li><a href="index.html" class="block text-navy hover:text-gold">Home</a></li>
+        <li><a href="listings.html" class="block text-navy hover:text-gold">Listings</a></li>
+        <li><a href="sell.html" class="block text-navy hover:text-gold">Sell</a></li>
+        <li><a href="about.html" class="block text-navy hover:text-gold">About</a></li>
+        <li><a href="contact.html" class="block text-navy hover:text-gold">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Find Your Dream Home</h2>
+      <p class="text-xl mb-8">Discover luxury properties in prime locations</p>
+
+      <!-- Search Form -->
+      <form id="search-form" class="max-w-2xl mx-auto bg-white rounded-lg p-4 shadow-lg">
+        <div class="flex flex-col md:flex-row gap-4">
+          <input type="text" id="search-input" placeholder="Search by location, property type..." class="flex-1 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-navy text-black">
+          <button type="submit" class="btn-primary px-6 py-2 rounded font-semibold">Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Featured Listings -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-navy text-center mb-12">Featured Properties</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="featured-listings">
+        <!-- Featured properties will be loaded here -->
+      </div>
+      <div class="text-center mt-8">
+        <a href="listings.html" class="btn-primary px-8 py-3 rounded font-semibold">View All Listings</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="bg-navy text-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <h4 class="text-3xl font-bold text-gold mb-2">500+</h4>
+          <p>Properties Listed</p>
+        </div>
+        <div>
+          <h4 class="text-3xl font-bold text-gold mb-2">250+</h4>
+          <p>Happy Clients</p>
+        </div>
+        <div>
+          <h4 class="text-3xl font-bold text-gold mb-2">10+</h4>
+          <p>Years Experience</p>
+        </div>
+        <div>
+          <h4 class="text-3xl font-bold text-gold mb-2">99+</h4>
+          <p>Awards Won</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h5 class="text-xl font-bold mb-4">Elite Estates</h5>
+        <p>Your trusted partner in luxury real estate.</p>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Quick Links</h6>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="listings.html" class="hover:text-gold">Listings</a></li>
+          <li><a href="sell.html" class="hover:text-gold">Sell</a></li>
+          <li><a href="about.html" class="hover:text-gold">About</a></li>
+          <li><a href="contact.html" class="hover:text-gold">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Services</h6>
+        <ul class="space-y-2">
+          <li>Property Sales</li>
+          <li>Property Management</li>
+          <li>Investment Consulting</li>
+          <li>Market Analysis</li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Contact Info</h6>
+        <p>123 Luxury Lane<br>Elite City, EC 6969</p>
+        <p>Phone: +91 9259269317</p>
+        <p>Email: amanbam6040@gmail.com</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+      <p>&copy; 2025 Elite Estates. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Load featured properties on home page
+    document.addEventListener('DOMContentLoaded', function() {
+      const featuredListings = document.getElementById('featured-listings');
+      const featured = properties.slice(0, 3); // First 3 properties
+      featured.forEach(property => {
+        const card = document.createElement('div');
+        card.className = 'property-card bg-white rounded-lg shadow-md overflow-hidden fade-in';
+        card.innerHTML = `
+          <img src="${property.images[0]}" alt="${property.title}" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-navy mb-2">${property.title}</h3>
+            <p class="text-gray-600 mb-2">${property.location}</p>
+            <p class="text-2xl font-bold text-gold mb-2">$${property.price.toLocaleString()}</p>
+            <div class="flex justify-between text-sm text-gray-500 mb-4">
+              <span>${property.bedrooms} beds</span>
+              <span>${property.bathrooms} baths</span>
+              <span>${property.sqft} sqft</span>
+            </div>
+            <a href="property-details.html?id=${property.id}" class="btn-primary inline-block px-4 py-2 rounded text-white">View Details</a>
+          </div>
+        `;
+        featuredListings.appendChild(card);
+      });
+
+      // Mobile menu toggle
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

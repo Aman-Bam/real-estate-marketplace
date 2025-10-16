@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Your Property - Elite Estates</title>
+  <meta name="description" content="List your property for sale with Elite Estates. Get the best price for your home with our expert agents.">
+  <meta name="keywords" content="sell property, list home, real estate agent, property valuation">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <a href="index.html" class="text-2xl font-bold text-navy">Elite Estates</a>
+      </div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="text-navy hover:text-gold transition">Home</a></li>
+        <li><a href="listings.html" class="text-navy hover:text-gold transition">Listings</a></li>
+        <li><a href="sell.html" class="text-navy hover:text-gold transition">Sell</a></li>
+        <li><a href="about.html" class="text-navy hover:text-gold transition">About</a></li>
+        <li><a href="contact.html" class="text-navy hover:text-gold transition">Contact</a></li>
+      </ul>
+      <button class="md:hidden" id="mobile-menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <ul class="px-4 py-2 space-y-2">
+        <li><a href="index.html" class="block text-navy hover:text-gold">Home</a></li>
+        <li><a href="listings.html" class="block text-navy hover:text-gold">Listings</a></li>
+        <li><a href="sell.html" class="block text-navy hover:text-gold">Sell</a></li>
+        <li><a href="about.html" class="block text-navy hover:text-gold">About</a></li>
+        <li><a href="contact.html" class="block text-navy hover:text-gold">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Sell Your Property</h1>
+      <p class="text-xl mb-8">Get the best price for your home with our expert agents</p>
+      <a href="#listing-form" class="btn-secondary px-8 py-3 rounded font-semibold text-lg">Start Listing</a>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-navy text-center mb-12">Why Choose Elite Estates?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-navy mb-2">Expert Agents</h3>
+          <p class="text-gray-600">Our experienced agents know the market and will get you the best price.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-navy mb-2">Market Analysis</h3>
+          <p class="text-gray-600">We provide comprehensive market analysis to price your property correctly.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-navy mb-2">Marketing</h3>
+          <p class="text-gray-600">We use cutting-edge marketing strategies to attract qualified buyers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Listing Form -->
+  <section id="listing-form" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-navy text-center mb-8">List Your Property</h2>
+        <form class="bg-gray-50 rounded-lg p-8 shadow-md">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Property Type</label>
+              <select class="form-input w-full px-3 py-2 border rounded" required>
+                <option value="">Select type</option>
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="villa">Villa</option>
+                <option value="condo">Condo</option>
+                <option value="penthouse">Penthouse</option>
+                <option value="townhouse">Townhouse</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Address</label>
+              <input type="text" class="form-input w-full px-3 py-2 border rounded" placeholder="Street address" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">City</label>
+              <input type="text" class="form-input w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">State/Province</label>
+              <input type="text" class="form-input w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">ZIP/Postal Code</label>
+              <input type="text" class="form-input w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Price ($)</label>
+              <input type="number" class="form-input w-full px-3 py-2 border rounded" placeholder="2500000" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Bedrooms</label>
+              <input type="number" class="form-input w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Bathrooms</label>
+              <input type="number" class="form-input w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Square Feet</label>
+              <input type="number" class="form-input w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Lot Size (sq ft)</label>
+              <input type="number" class="form-input w-full px-3 py-2 border rounded">
+            </div>
+          </div>
+          <div class="mt-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Description</label>
+            <textarea class="form-input w-full px-3 py-2 border rounded" rows="4" placeholder="Describe your property..." required></textarea>
+          </div>
+          <div class="mt-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Features (comma-separated)</label>
+            <input type="text" class="form-input w-full px-3 py-2 border rounded" placeholder="Pool, Garden, Garage..." required>
+          </div>
+          <div class="mt-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Upload Photos</label>
+            <input type="file" multiple accept="image/*" class="form-input w-full px-3 py-2 border rounded">
+            <p class="text-sm text-gray-500 mt-1">Upload up to 10 high-quality photos of your property</p>
+          </div>
+          <div class="mt-8">
+            <button type="submit" class="btn-primary w-full py-3 rounded font-semibold text-lg">Submit Listing</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Simulation -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-navy text-center mb-12">Seller Dashboard</h2>
+      <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-gold">100k+</h3>
+            <p class="text-gray-600">Views</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-gold">999+</h3>
+            <p class="text-gray-600">Inquiries</p>
+          </div>
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-gold">500</h3>
+            <p class="text-gray-600">Offers</p>
+          </div>
+        </div>
+        <div class="border-t pt-6">
+          <h3 class="text-xl font-semibold text-navy mb-4">Recent Activity</h3>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between py-2 border-b">
+              <div>
+                <p class="font-medium">Property viewed by John Doe</p>
+                <p class="text-sm text-gray-500">2 hours ago</p>
+              </div>
+              <span class="text-green-500">✓</span>
+            </div>
+            <div class="flex items-center justify-between py-2 border-b">
+              <div>
+                <p class="font-medium">Inquiry from Jane Smith</p>
+                <p class="text-sm text-gray-500">1 day ago</p>
+              </div>
+              <span class="text-blue-500">New</span>
+            </div>
+            <div class="flex items-center justify-between py-2">
+              <div>
+                <p class="font-medium">Offer submitted by Bob Johnson</p>
+                <p class="text-sm text-gray-500">3 days ago</p>
+              </div>
+              <span class="text-gold font-semibold">$2,450,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+ <footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h5 class="text-xl font-bold mb-4">Elite Estates</h5>
+        <p>Your trusted partner in luxury real estate.</p>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Quick Links</h6>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="listings.html" class="hover:text-gold">Listings</a></li>
+          <li><a href="sell.html" class="hover:text-gold">Sell</a></li>
+          <li><a href="about.html" class="hover:text-gold">About</a></li>
+          <li><a href="contact.html" class="hover:text-gold">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Services</h6>
+        <ul class="space-y-2">
+          <li>Property Sales</li>
+          <li>Property Management</li>
+          <li>Investment Consulting</li>
+          <li>Market Analysis</li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Contact Info</h6>
+        <p>123 Luxury Lane<br>Elite City, EC 6969</p>
+        <p>Phone: +91 9259269317</p>
+        <p>Email: amanbam6040@gmail.com</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+      <p>&copy; 2025 Elite Estates. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

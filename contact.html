@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Elite Estates</title>
+  <meta name="description" content="Get in touch with Elite Estates. Contact our expert agents for all your luxury real estate needs.">
+  <meta name="keywords" content="contact us, real estate agents, luxury homes, property inquiries">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <a href="index.html" class="text-2xl font-bold text-navy">Elite Estates</a>
+      </div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="text-navy hover:text-gold transition">Home</a></li>
+        <li><a href="listings.html" class="text-navy hover:text-gold transition">Listings</a></li>
+        <li><a href="sell.html" class="text-navy hover:text-gold transition">Sell</a></li>
+        <li><a href="about.html" class="text-navy hover:text-gold transition">About</a></li>
+        <li><a href="contact.html" class="text-navy hover:text-gold transition">Contact</a></li>
+      </ul>
+      <button class="md:hidden" id="mobile-menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <ul class="px-4 py-2 space-y-2">
+        <li><a href="index.html" class="block text-navy hover:text-gold">Home</a></li>
+        <li><a href="listings.html" class="block text-navy hover:text-gold">Listings</a></li>
+        <li><a href="sell.html" class="block text-navy hover:text-gold">Sell</a></li>
+        <li><a href="about.html" class="block text-navy hover:text-gold">About</a></li>
+        <li><a href="contact.html" class="block text-navy hover:text-gold">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Contact Us</h1>
+      <p class="text-xl mb-8">Get in touch with our expert team</p>
+    </div>
+  </section>
+
+  <!-- Contact Form and Info -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-3xl font-bold text-navy mb-8">Send us a Message</h2>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                <input type="text" class="form-input w-full px-3 py-2 border rounded" required>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                <input type="text" class="form-input w-full px-3 py-2 border rounded" required>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+              <input type="email" class="form-input w-full px-3 py-2 border rounded" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+              <input type="tel" class="form-input w-full px-3 py-2 border rounded">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+              <select class="form-input w-full px-3 py-2 border rounded" required>
+                <option value="">Select a subject</option>
+                <option value="buying">Buying a Property</option>
+                <option value="selling">Selling a Property</option>
+                <option value="investment">Investment Opportunities</option>
+                <option value="valuation">Property Valuation</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+              <textarea class="form-input w-full px-3 py-2 border rounded" rows="6" placeholder="Tell us about your real estate needs..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full py-3 rounded font-semibold text-lg">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info and Map -->
+        <div>
+          <h2 class="text-3xl font-bold text-navy mb-8">Get in Touch</h2>
+          <div class="space-y-6 mb-8">
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-navy mb-1">Address</h3>
+                <p class="text-gray-600">123 Luxury Lane<br>Elite City, EC 12345<br>India</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-navy mb-1">Phone</h3>
+                <p class="text-gray-600">+91 9259269317</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-navy mb-1">Email</h3>
+                <p class="text-gray-600">amanbam6040@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-navy mb-1">Business Hours</h3>
+                <p class="text-gray-600">Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM<br>Sun: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center overflow-hidden">
+            <!-- <p class="text-gray-500 text-center">
+              <svg class="w-12 h-12 mx-auto mb-2 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+              </svg>
+              Interactive Map<br>
+              <span class="text-sm">Our office location</span>
+            </p> -->
+            <img src="assets/Interactive Map Placeholder.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-navy text-center mb-12">Frequently Asked Questions</h2>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="bg-white rounded-lg shadow-md">
+          <button class="w-full px-6 py-4 text-left font-semibold text-navy hover:text-gold focus:outline-none" onclick="toggleFAQ(this)">
+            How do I search for properties?
+            <svg class="w-5 h-5 float-right mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="px-6 pb-4 hidden">
+            <p class="text-gray-600">You can search for properties using our search bar on the homepage or browse our listings page with advanced filters for location, price, bedrooms, and property type.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md">
+          <button class="w-full px-6 py-4 text-left font-semibold text-navy hover:text-gold focus:outline-none" onclick="toggleFAQ(this)">
+            What services do you offer?
+            <svg class="w-5 h-5 float-right mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="px-6 pb-4 hidden">
+            <p class="text-gray-600">We offer comprehensive real estate services including property sales, buying assistance, market analysis, property valuation, investment consulting, and property management.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md">
+          <button class="w-full px-6 py-4 text-left font-semibold text-navy hover:text-gold focus:outline-none" onclick="toggleFAQ(this)">
+            How long does it take to sell a property?
+            <svg class="w-5 h-5 float-right mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="px-6 pb-4 hidden">
+            <p class="text-gray-600">The time to sell a property varies depending on market conditions, property type, and pricing. On average, luxury properties in our market sell within 30-90 days with proper marketing and pricing.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md">
+          <button class="w-full px-6 py-4 text-left font-semibold text-navy hover:text-gold focus:outline-none" onclick="toggleFAQ(this)">
+            Do you offer virtual tours?
+            <svg class="w-5 h-5 float-right mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="px-6 pb-4 hidden">
+            <p class="text-gray-600">Yes, we offer virtual tours for most of our listed properties. Contact our agents to schedule a virtual viewing if you're unable to visit in person.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h5 class="text-xl font-bold mb-4">Elite Estates</h5>
+        <p>Your trusted partner in luxury real estate.</p>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Quick Links</h6>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="listings.html" class="hover:text-gold">Listings</a></li>
+          <li><a href="sell.html" class="hover:text-gold">Sell</a></li>
+          <li><a href="about.html" class="hover:text-gold">About</a></li>
+          <li><a href="contact.html" class="hover:text-gold">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Services</h6>
+        <ul class="space-y-2">
+          <li>Property Sales</li>
+          <li>Property Management</li>
+          <li>Investment Consulting</li>
+          <li>Market Analysis</li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Contact Info</h6>
+        <p>123 Luxury Lane<br>Elite City, EC 6969</p>
+        <p>Phone: +91 9259269317</p>
+        <p>Email: amanbam6040@gmail.com</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+      <p>&copy; 2025 Elite Estates. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+
+    // FAQ toggle function
+    function toggleFAQ(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('svg');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+</body>
+</html>

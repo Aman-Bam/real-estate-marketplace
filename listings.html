@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Listings - Elite Estates</title>
+  <meta name="description" content="Browse our extensive collection of luxury property listings. Find your perfect home today.">
+  <meta name="keywords" content="property listings, real estate, homes for sale, luxury properties">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <a href="index.html" class="text-2xl font-bold text-navy">Elite Estates</a>
+      </div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="text-navy hover:text-gold transition">Home</a></li>
+        <li><a href="listings.html" class="text-navy hover:text-gold transition">Listings</a></li>
+        <li><a href="sell.html" class="text-navy hover:text-gold transition">Sell</a></li>
+        <li><a href="about.html" class="text-navy hover:text-gold transition">About</a></li>
+        <li><a href="contact.html" class="text-navy hover:text-gold transition">Contact</a></li>
+      </ul>
+      <button class="md:hidden" id="mobile-menu-toggle">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <ul class="px-4 py-2 space-y-2">
+        <li><a href="index.html" class="block text-navy hover:text-gold">Home</a></li>
+        <li><a href="listings.html" class="block text-navy hover:text-gold">Listings</a></li>
+        <li><a href="sell.html" class="block text-navy hover:text-gold">Sell</a></li>
+        <li><a href="about.html" class="block text-navy hover:text-gold">About</a></li>
+        <li><a href="contact.html" class="block text-navy hover:text-gold">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="bg-navy text-white py-12">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold text-center mb-4">Property Listings</h1>
+      <p class="text-xl text-center">Discover your perfect property from our curated collection</p>
+    </div>
+  </section>
+
+  <!-- Filters and Search -->
+  <section class="py-8 bg-white shadow-sm">
+    <div class="container mx-auto px-4">
+      <form id="filter-form" class="grid grid-cols-1 md:grid-cols-6 gap-4">
+        <input type="text" id="location-filter" placeholder="Location" class="form-input px-3 py-2 border rounded">
+        <input type="number" id="min-price" placeholder="Min Price" class="form-input px-3 py-2 border rounded">
+        <input type="number" id="max-price" placeholder="Max Price" class="form-input px-3 py-2 border rounded">
+        <select id="bedrooms-filter" class="form-input px-3 py-2 border rounded">
+          <option value="">Bedrooms</option>
+          <option value="1">1+</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+          <option value="5">5+</option>
+        </select>
+        <select id="type-filter" class="form-input px-3 py-2 border rounded">
+          <option value="">Property Type</option>
+          <option value="House">House</option>
+          <option value="Apartment">Apartment</option>
+          <option value="Villa">Villa</option>
+          <option value="Condo">Condo</option>
+          <option value="Penthouse">Penthouse</option>
+          <option value="Townhouse">Townhouse</option>
+        </select>
+        <button type="submit" class="btn-primary px-6 py-2 rounded font-semibold">Filter</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-4 py-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Property List -->
+      <div class="lg:w-2/3">
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-navy">Available Properties</h2>
+          <div class="flex gap-2">
+            <button id="grid-view" class="p-2 border rounded hover:bg-gray-100">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+              </svg>
+            </button>
+            <button id="list-view" class="p-2 border rounded hover:bg-gray-100">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="property-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Properties will be loaded here -->
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:w-1/3">
+        <!-- Map Placeholder -->
+        <div class="bg-white rounded-lg shadow-md p-4 mb-6">
+          <h3 class="text-xl font-semibold text-navy mb-4">Map View</h3>
+          <div class="bg-gray-200 h-64 rounded flex items-center justify-center overflow-hidden">
+            <img src="assets/Interactive Map Placeholder.webp">
+            <!-- <p class="text-gray-500">Interactive Map Placeholder</p>
+            <p class="text-sm text-gray-400 mt-2">Map integration would go here</p> -->
+          </div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h3 class="text-xl font-semibold text-navy mb-4">Market Overview</h3>
+          <div class="space-y-3">
+            <div class="flex justify-between">
+              <span>Total Listings:</span>
+              <span class="font-semibold" id="total-listings">0</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Average Price:</span>
+              <span class="font-semibold" id="avg-price">$0</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Price Range:</span>
+              <span class="font-semibold" id="price-range">$0 - $0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Footer -->
+ <footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h5 class="text-xl font-bold mb-4">Elite Estates</h5>
+        <p>Your trusted partner in luxury real estate.</p>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Quick Links</h6>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="listings.html" class="hover:text-gold">Listings</a></li>
+          <li><a href="sell.html" class="hover:text-gold">Sell</a></li>
+          <li><a href="about.html" class="hover:text-gold">About</a></li>
+          <li><a href="contact.html" class="hover:text-gold">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Services</h6>
+        <ul class="space-y-2">
+          <li>Property Sales</li>
+          <li>Property Management</li>
+          <li>Investment Consulting</li>
+          <li>Market Analysis</li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="text-lg font-semibold mb-4">Contact Info</h6>
+        <p>123 Luxury Lane<br>Elite City, EC 6969</p>
+        <p>Phone: +91 9259269317</p>
+        <p>Email: amanbam6040@gmail.com</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+      <p>&copy; 2025 Elite Estates. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu toggle
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Update stats
+      document.getElementById('total-listings').textContent = properties.length;
+      const prices = properties.map(p => p.price);
+      const avgPrice = prices.reduce((a, b) => a + b, 0) / prices.length;
+      document.getElementById('avg-price').textContent = `$${Math.round(avgPrice).toLocaleString()}`;
+      document.getElementById('price-range').textContent = `$${Math.min(...prices).toLocaleString()} - $${Math.max(...prices).toLocaleString()}`;
+    });
+  </script>
+</body>
+</html>
