@@ -519,12 +519,6 @@ Special thanks to:
 - **Stack Overflow Community** - For invaluable troubleshooting help
 - **All Contributors** - For making this project better
 
-## 📊 Project Stats
-
-![GitHub stars](https://img.shields.io/github/stars/Aman-Bam/elite-estates?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Aman-Bam/elite-estates?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/Aman-Bam/elite-estates?style=social)
-
 <div align="center">
 
 ### ⭐ Star this project if you found it helpful!
